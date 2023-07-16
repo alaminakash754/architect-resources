@@ -142,6 +142,40 @@ main {
     width: 280px;
     height: 280px;
 }
+.facts{
+    margin-top: 80px;
+}
+.facts-title{
+    margin-left: 70px;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.facts-description{
+    margin-left: 70px;
+    font-size: 1rem;
+    font-weight: 250;
+    margin-top: 10px;
+}
+.facts-card-container{
+    margin-top: 80px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.card{
+    padding: 20px 15px;
+    border-radius: 5px;
+border: 1px solid #FF900E;
+}
+.card-stats{
+    font-size: 2rem;
+    color: #424242;
+}
+.card-title{
+    font-size: 1rem;
+    color: #727272;
+}
 
 /* for responsive */
 @media screen and (max-width:576px) {
