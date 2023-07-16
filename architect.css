@@ -138,74 +138,224 @@ main {
     line-height: 26px;
     /* 162.5% */
 }
-.image{
+
+.image {
     width: 280px;
     height: 280px;
 }
-.facts{
+
+.second-features {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.features-details {
+    margin-left: 80px;
+    margin-right: 50px;
+
+}
+
+.features-details-title {
+    color: #131313;
+    font-size: 2rem;
+    font-weight: 500;
+    border-left: 5px solid #FF900E;
+    padding-left: 10px;
+}
+
+.features-details p {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: #727272;
+    font-weight: 250;
+}
+
+.features-card {
+    margin-top: 10px;
+}
+
+.features-card-title {
+    margin-top: 40px;
+    padding-left: 10px;
+    color: #131313;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.features-card-description {
+    margin-top: 8px;
+    padding-left: 10px;
+    color: #727272;
+    color: #727272;
+    font-weight: 250;
+}
+
+.features-second-img {
+    margin-right: 80px;
+    margin-left: 30px;
+    width: 600px;
+    height: 700px;
+}
+
+.features-box {
+    border-radius: 8px;
+    width: 25%;
+    height: 10%;
+    text-align: center;
+    color: #FFF;
+    background-color: #FF900E;
+    padding: 20px;
+    position: relative;
+    bottom: 70px;
+}
+
+.features-box h3 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.features-box p {
+    font-size: 1rem;
+}
+
+.facts {
     margin-top: 80px;
 }
-.facts-title{
+
+.facts-title {
     margin-left: 70px;
     font-size: 2rem;
     font-weight: 500;
 }
-.facts-description{
+
+.facts-description {
     margin-left: 70px;
     font-size: 1rem;
     font-weight: 250;
     margin-top: 10px;
 }
-.facts-card-container{
+
+.facts-card-container {
     margin-top: 80px;
     text-align: center;
     display: flex;
     justify-content: space-evenly;
 
 }
-.card{
+
+.card {
     padding: 20px 15px;
     border-radius: 5px;
-border: 1px solid #FF900E;
+    border: 1px solid #FF900E;
 }
-.card-stats{
+
+.card-stats {
     font-size: 2rem;
     color: #424242;
 }
-.card-title{
+
+.card-title {
     font-size: 1rem;
     color: #727272;
 }
 
+.footer {
+    margin-left: 120px;
+    margin-top: 90px;
+    text-align: center;
+    width: 1000px;
+    height: 50px;
+    border-radius: 8px;
+    background: #FFF4E7;
+    margin-bottom: 80px;
+}
+.sponsors{
+    margin-top: 80px;
+    text-align: center;
+}
+.sponsors h3{
+    margin-top: 10px;
+    color: #131313;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.sponsors p{
+    margin-top: 15px;
+    color: #727272;
+    font-size: 0.8rem;
+}
+.sponsor-img{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.sponsor-image{
+    width: 100px;
+    height: 25px;
+}
+.footer p{
+    font-size: 0.8rem;
+    padding-top: 15px;
+}
 /* for responsive */
 @media screen and (max-width:576px) {
     header {
+        margin-left: 15px;
+        width: 350px;
         padding: 15px;
+        
     }
 
     nav,
-    nav>ul, .features {
+    nav>ul,
+    .features, .second-features, .facts-card-container, .sponsor-img{
         flex-direction: column;
     }
-    .features-image{
+    .card{
+        margin-left: 40px;
+        width: 300px;
+    }
+    .features-second-img{
+        padding-left: 30px;
+        width: 300px;
+        height: 400px ;
+    }
+    .features-image {
         grid-template-columns: 1fr;
         padding-left: 10px;
     }
-    .feature-list{
+    .features-box{
+        margin-left: 20px;
+    }
+    .sponsors > p{
+        width: 350px;
+        margin-left: 20px;
+    }
+    .feature-list {
         margin-right: 0px;
     }
+    .footer{
+        width: 300px;
+        margin-left: 60px;
+    }
+    
 }
 
 /* tab or medium devices */
 @media screen and (min-width:577px) and (max-width:960px) {
-    nav{
+    nav, .second-features {
         flex-direction: column;
         padding: 15px;
     }
-    .features{
+
+    .features {
         flex-direction: column;
     }
-    .features-image{
+
+    .features-image {
         padding-left: 10px;
     }
 
